@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UniAvalia</title>
+
+<style <link rel="stylesheet" href="style.css">
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background: #123759;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 360px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .logo {
+    background: #fff;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+  }
+
+  h1 {
+    color: #fff;
+    margin-bottom: 5px;
+  }
+
+  .subtitle {
+    color: #ddd;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .card h2 {
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .btn-google {
+    background: #123759;
+    color: white;
+  }
+
+  .btn-manual {
+    background: transparent;
+    border: 1px solid #123759;
+    color: #123759;
+  }
+
+  .divider {
+    margin: 10px 0;
+    font-size: 12px;
+    color: #888;
+  }
+
+  .input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+
+  .info {
+    margin-top: 15px;
+    font-size: 12px;
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .footer {
+    margin-top: 15px;
+    color: #ccc;
+    font-size: 12px;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="logo">🎓</div>
+
+  <h1>UniAvalia</h1>
+  <div class="subtitle">Avaliação de Projetos Acadêmicos</div>
+
+  <div class="card">
+
+    <h2>Bem-vindo(a)</h2>
+    <p>Faça login para avaliar os projetos</p>
+
+    <button class="btn btn-google" onclick="loginGoogle()">
+      Entrar com Google
+    </button>
+
+    <div class="divider">OU</div>
+
+    <input class="input" type="email" id="email" placeholder="Digite seu email">
+
+    <button class="btn btn-manual" onclick="loginManual()">
+      Login Manual
+    </button>
+
+    <div class="info">
+      🔒 Apenas emails autorizados<br><br>
+      Teste:<br>
+      professor1@faculdade.edu<br>
+      admin@faculdade.edu
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © 2026 UniAvalia
+  </div>
+
+</div>
+
+<script>
+  const emailsAutorizados = [
+    "professor1@faculdade.edu",
+    "admin@faculdade.edu"
+  ];
+
+  function loginGoogle() {
+    alert("Login Google simulado 😄");
+  }
+
+  function loginManual() {
+    const email = document.getElementById("email").value;
+
+    if (emailsAutorizados.includes(email)) {
+      alert("Login autorizado! 🎉");
+    } else {
+      alert("Acesso não autorizado ❌");
+    }
+  }
+</script>
+
+</body>
+</html>

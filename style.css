@@ -1,0 +1,125 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Fundo geral */
+body {
+  background: #123759;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container principal */
+.container {
+  width: 100%;
+  max-width: 360px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  background: #ffffff;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 15px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+}
+
+/* Título */
+h1 {
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+/* Subtítulo */
+.subtitle {
+  color: #dddddd;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Card branco */
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+/* Título do card */
+.card h2 {
+  margin-bottom: 10px;
+}
+
+/* Texto do card */
+.card p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #555555;
+}
+
+/* Botões */
+.btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Botão Google */
+.btn-google {
+  background: #123759;
+  color: #ffffff;
+}
+
+/* Botão manual */
+.btn-manual {
+  background: transparent;
+  border: 1px solid #123759;
+  color: #123759;
+}
+
+/* Divisor */
+.divider {
+  margin: 10px 0;
+  font-size: 12px;
+  color: #888888;
+}
+
+/* Input */
+.input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #cccccc;
+}
+
+/* Caixa de info */
+.info {
+  margin-top: 15px;
+  font-size: 12px;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Rodapé */
+.footer {
+  margin-top: 15px;
+  color: #cccccc;
+  font-size: 12px;
+}
